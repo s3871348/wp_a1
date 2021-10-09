@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script type="text/javascript" src="scripts/meal.js"></script>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/meal.css">
+</head>
+
+<body>
+    <a href="index.html">Go Home</a>
+    <h1 id="head">Welcome to LIFE Healthy Habits Service</h1>
+    <iframe src="videos/habits2.mp4" frameborder="0"></iframe>
+    <br>
+    <blockquote>
+        <h2>Ways to create good habits</h2>
+        <p>It's hard to change everything all at once; it's easier to set small goals and achieve them. This helps
+            create good habits. For example, it is easier to do a small amount of exercise each day than to decide to
+            run a marathon.
+
+            It might take you several months to create a new habit. So you need to include the change as part of your
+            regular routine. A diary (hard copy or online) or a wall planner may help.
+
+            Many habits are triggered by events. For example, washing your hands is triggered by going to the toilet. It
+            helps if you set triggers for your new habit as part of your existing routine. This could include a
+            particular time of day, or an event such as waking up or eating lunch.
+
+            Setting reminders can help you maintain good habits. If you use an online diary, set automatic reminders on
+            your computer and your phone. There are also apps available that help with goal setting and new habits.
+
+            Your family and friends can also be a great support and can help to keep you motivated.
+
+            If you slip back into your old habits, don’t give up - this is common. Just remember why you wanted to make
+            the change. This will help you pick up where you left off.</p>
+        <br>
+        <br>
+
+    </blockquote>
+
+    <!--Meal Planner-->
+    <blockquote>
+        <h2>Meal Planner</h2>
+        <form onsubmit="return planMeal()" action="">
+            <div><span class="label" >1. Choose diet type:</span><br>
+                Anything <input type="radio" name="dietType" class="dietType" id="anything" value="anything">
+                Vegan <input type="radio" name="dietType" class="dietType"id="vegan" value="anything">
+            </div>
+            <div class="error" id="dietError">Please choose your diet type</div>
+            
+            <br>
+
+            <div><span class="label">2. Choose Calories:</span><br>
+                <select name="calory" id="calory" >
+                    <option selected="selected" value="choose">choose calories</option>
+                    <option value="first">1000-1250</option>
+                    <option value="second">1250-1500</option>
+                    <option value="third">1500-1750</option>
+                    <option value="fourth">1750-2000</option>
+                    <option value="fifth">2000-2250</option>
+                </select>
+            </div>
+            <div class="error" id="caloryError">Required: Please choose an option</div>
+
+            <br>
+
+            <div><span class="label">3. Choose meal number:</span><br>
+                <select name="meal" id="meal">
+                    <option selected="selected" value="choose">choose meal number</option>
+                    <option value="two">2</option>
+                    <option value="three">3</option>
+                    <option value="four">4</option>
+                </select>
+            </div>
+            <div class="error" id="mealError">Required: Please choose an option</div>
+            <br>
+            <br>
+            
+            <div id="generate"><input id="meal_submit" type="submit" value="Generate"></div>
+        </form>
+
+        <div id="mealPlan" ></div>
+    </blockquote>
+
+    <blockquote>
+        <br>
+        <a id="goTop" href="#head">Go Top &#8593;</a>
+    </blockquote>
+</body>
+
+<footer>
+    <blockquote>
+        <h2>References</h2>
+        <ol>
+            <li>iStock. (n.d.). Part of woman preparing fruit smoothie in kitchen. [online] Available at: https://www.istockphoto.com/video/part-of-woman-preparing-fruit-smoothie-in-kitchen-gm1011831072-272607392 [Accessed 7 Sep. 2021].
+            </li>
+        </ol>
+
+    </blockquote>
+</footer>
+
+</html>

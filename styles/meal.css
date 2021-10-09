@@ -1,0 +1,21 @@
+.error {
+    color: red;
+    font-size: 18px;
+    display: none;
+    
+}
+
+form{
+    margin: 50px;
+}
+
+#generate{
+    margin-left: 50px;
+}
+.label{
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+#mealPlan{
+    display: none;
+}

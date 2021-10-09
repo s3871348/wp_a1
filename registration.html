@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script type="text/javascript" src="scripts/registration.js"></script>
+    <link rel="stylesheet" href="styles/registration.css">
+</head>
+
+<body>
+    <noscript>You need to enable Javascript in your browser settings to use Javascript!</noscript>
+    <p id="regisHomeLink"><a href="index.html">Home page</a></p>
+    <div id="imgBox"><img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="images/wellbeing.jpg"
+            height="100px" width="100px" id="wellbeing" alt="wellbeing icons"></div>
+
+
+    <div id="container">
+
+
+        <div id="content">
+
+            <h2>SIGN UP</h2>
+
+
+            <form id="registration_form" onsubmit="return validate()" method="POST" action="registrationDone.html">
+                <div><span class="label">First Name:</span><input name="firstname" type="text" value="" id="firstname">
+                </div>
+                <div class="error" id="firstnameError">Required: Please enter your first name</div>
+                <br>
+                <div><span class="label">Lastname:</span><input name="lastname" type="text" value="" id="lastname">
+                </div>
+                <div class="error" id="lastnameError">Required: Please enter your lastname</div>
+                <br>
+                <div><span class="label">Email:</span><input name="email" type="text" value="" id="email"></div>
+                <div class="error" id="emailError"> Required: Please enter a valid email</div>
+                <br>
+                <div><span class="label">Confirm Email:</span><input name="email" type="text" value=""
+                        id="confirmEmail"></div>
+                <div class="error" id="confirmEmailError"> Required: Please enter the same email</div>
+                <br>
+                <div><span class="label">Phone Number:</span><input name="phone" type="text" value="" id="phone"></div>
+                <div class="error" id="phoneError">Please enter a valid phone number in the format: +61 4xxxxx xxx</div>
+                <br>
+                <div><span class="label">Age:</span><input id="age" name="age" type="range" min="0" max="90" value="0"
+                        oninput="showAge(this)"><span id="ageValue"></span></div>
+                <div class="error" id="ageError">Required: Please select an age above 16</div>
+                <br>
+                <div><span class="label">Password:</span><input name="password" type="password" value="" id="password">
+                </div>
+                <div class="error" id="passwordError">Required: Please enter a password between 8 and 20 characters
+                </div>
+                <br>
+                <!--Student-->
+                <div><span class="label">Are you a student?</span>
+                    Yes<input class="student" type="radio" name="studentStatus" id="studentStatus1" value="yes">
+                    No<input class="student" type="radio" name="studentStatus" id="studentStatus2" value="no">
+                </div>
+                <div class="error" id="studentError">Required: Please select your student status</div>
+                <br>
+                <!--Employment-->
+                <div><span class="label">Are you employed?</span>
+                    Yes<input class="employment" type="radio" name="employmentStatus" id="employmentStatus1"
+                        value="yes">
+                    No<input class="employment" type="radio" name="employmentStatus" id="employmentStatus2" value="no">
+                </div>
+                <div class="error" id="employmentError">Required: Please enter employment status</div>
+                <br>
+                <p id="fee" aria-valuetext=""></p>
+
+                <div><input id="registration_submit" type="submit" value="Submit"></div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>

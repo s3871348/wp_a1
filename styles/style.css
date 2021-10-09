@@ -1,0 +1,145 @@
+.grid-container{
+    width: 100%;
+    height: 100%;
+    display: grid;
+   grid-template-areas: 'menu header header header header header'
+   'menu main main main main main'
+   'menu footer footer footer footer footer';
+    background-color: #e9f5b4;
+    grid-gap: 5px;
+    padding: 5px;
+    
+}
+
+.header { grid-area: header;  }
+.sidebar { grid-area: menu; }
+.main { grid-area: main;}
+.footer { grid-area: footer;}
+
+
+.grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    
+    padding-left: 5px;
+    padding-top: 5px;
+   
+    
+  }
+.container {
+    display: grid;
+    grid-template-columns: 200px 200px 200px auto;
+    column-gap: 5px; 
+    background-color:lightgreen;
+}
+a{
+    color:rgb(168, 25, 0);
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+.sidebarButtons{
+    border: black solid;
+    background-color: white;
+}
+#firstService{
+    padding: 0 65px 0 65px;
+}
+#secondService{
+    padding: 0 45px 0 45px;
+}
+#thirdService{
+    padding: 0 47px 0 47px;
+}
+#fourthService{
+    padding: 0 32px 0 32px;
+}
+blockquote{
+    font-size: 18px;
+}
+#register{
+    float: right;
+}
+#logo {
+    margin-top: 0px;
+    margin-left: 0px;
+}
+
+h1 {
+    color: #d00404;
+    padding-left: 30px;
+    text-align: center;
+}
+h2, h3, h4{
+    color: #d00404;
+    padding-left: 30px;
+    
+
+}
+#footer{
+    text-align: left;
+    
+}
+.footerItems{
+    margin-left: 10px;
+    margin-right: 40px;
+}
+#thanks{
+    text-align: center;
+    margin: 200px;
+    color: green;
+}
+#contact{
+    padding:  200px 400px 0 400px;
+    
+}
+.contactLabel{
+    color: darkslategray;
+    width: 200px;
+    float: left;
+}
+#contactSubmit{
+text-align: center;
+margin-left: 300px;
+
+}
+body{
+    background-color: #DDFFE7;
+    
+}
+.homeButton{
+    font-size: 20px;
+    color: blueviolet;
+    margin: 30px;
+
+}
+
+#sitemap{
+    margin-left: 100px;
+}
+
+#sitemapContainer{
+    display: grid;
+    grid-template-columns: auto auto;
+    
+}
+.sitemapLinks{
+    padding-left: 30px;
+}
+.footerItems{
+    margin: 30px;
+}
+#footer{
+    margin: 30px;
+}
+iframe{
+    margin-left: 500px;
+}
+.item{
+    margin: 5px 20px 5px 30px;
+}
+.learn{
+    padding-left: 550px;
+}
+#goTop{
+    text-align: center;
+
+}
